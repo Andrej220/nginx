@@ -53,7 +53,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-exporter
-  namespace: default
+  namespace: nginx
   labels:
     app: nginx
 spec:
