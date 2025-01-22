@@ -1,7 +1,7 @@
 resources:
   - ../../base/
 
-namespace: production
+namespace: nginx-prod
 
 patchesStrategicMerge:
   - patches.yaml
