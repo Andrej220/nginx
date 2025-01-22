@@ -44,8 +44,8 @@ data:
         listen 80;
         location /nginx_status {
             stub_status;
-            allow 127.0.0.1;  # Allow localhost only
-            deny all;         # Deny all other requests
+            allow 127.0.0.1;  
+            deny all;         
         }
     }
 ---
