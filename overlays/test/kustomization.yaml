@@ -1,0 +1,7 @@
+resources:
+  - ../../base/
+
+namespace: test
+
+patchesStrategicMerge:
+  - patches.yaml

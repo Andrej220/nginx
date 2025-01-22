@@ -1,0 +1,7 @@
+resources:
+  - ../../base/
+
+namespace: production
+
+patchesStrategicMerge:
+  - patches.yaml
