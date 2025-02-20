@@ -17,14 +17,14 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 10.0.2.15:30996/nginx-custom:latest:latest
+        image: 10.0.2.15:30996/nginx-custom:latest@
         ports:
         - containerPort: 80
         volumeMounts:
         - name: nginx-config
           mountPath: /etc/nginx/conf.d
       - name: nginx-exporter
-        image: 10.0.2.15:30996/nginx-custom:latest:latest
+        image: 10.0.2.15:30996/nginx-custom:latest@
         args:
         - "-nginx.scrape-uri=http://127.0.0.1:80/nginx_status"
         ports:
