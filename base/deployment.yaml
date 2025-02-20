@@ -20,18 +20,18 @@ spec:
         image: 10.0.2.15:30996/nginx-custom:latest@sha256:1ab62773be70324a7ffbf96752d5c4efedb4a2c0388cfba60aa401c442d0ae5f
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: nginx-config
-          mountPath: /etc/nginx/conf.d
+#        volumeMounts:
+#        - name: nginx-config
+#          mountPath: /etc/nginx/conf.d
       - name: nginx-exporter
         image: 10.0.2.15:30996/nginx-custom:latest@sha256:1ab62773be70324a7ffbf96752d5c4efedb4a2c0388cfba60aa401c442d0ae5f
         args:
         - "-nginx.scrape-uri=http://127.0.0.1:80/nginx_status"
         ports:
         - containerPort: 9113
-      volumes:
-      - name: nginx-config
-        configMap:
-          name: nginx-config
+#      volumes:
+#      - name: nginx-config
+#        configMap:
+#          name: nginx-config
 
 
