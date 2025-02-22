@@ -1,4 +1,10 @@
 resources:
-  - deployment.yaml
-  - service.yaml
-  - configmap.yaml
+- deployment.yaml
+- service.yaml
+- configmap.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- digest: sha256:2aec2ab4ce93599e2e4dea2e1e5c46034a291b520c232c541484cbd61eca216b
+  name: nginx
+  newName: 10.0.2.15:30996/nginx-custom
