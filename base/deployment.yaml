@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 10.0.2.15:30996/nginx-custom:latest@sha256:8273bf632da342f94a55d3c9a59f30ae11519fe21318ff81e5120db2b95e8006
+        image: 10.0.2.15:30996/nginx-custom
         ports:
         - containerPort: 80
 #        volumeMounts:
