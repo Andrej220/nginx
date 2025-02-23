@@ -4,6 +4,6 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- digest: sha256:6221128d20e151b674b4bb4867b67618b02dfc74b203810e6d7573a7baf32e67
+- digest: sha256:f0708c5e4a09d6b75a7d72dc871a7a4cfb5cbea679de0f5c6c09f6192c1c1a53
   name: nginx
   newName: 10.0.2.15:30996/nginx-custom
