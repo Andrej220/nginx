@@ -4,3 +4,4 @@ metadata:
   name: nginx-deployment
 spec:
   replicas: 3
+
