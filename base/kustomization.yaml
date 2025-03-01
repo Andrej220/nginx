@@ -5,5 +5,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - digest: sha256:e64db50dff739e38bd8fd3a4bfd792456531512b79ecd6a4a09d8fe94adb085d
-  name: nginx
+  name: 10.0.2.15:30996/nginx-custom
   newName: local-registry.registry.svc.cluster.local:5000/nginx-custom
