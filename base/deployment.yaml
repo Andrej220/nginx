@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx-custom
+      - name: nginx
         image: 10.0.2.15:30996/nginx-custom
         ports:
         - containerPort: 80
