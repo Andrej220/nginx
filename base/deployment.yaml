@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 10.0.2.15:30996/nginx-custom
+        image: k3slab.local:30996/nginx-custom
         ports:
         - containerPort: 80
 #        volumeMounts:
