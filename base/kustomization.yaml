@@ -4,6 +4,6 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- digest: sha256:7460bffd8487b6de15db8e823a3b506afcdf4af85408d1f14ff04b75da6031f6
+- digest: sha256:b3ccd9c7d407c28c9ac0425ee6d64d190bd09161e62febc61de2a06e3e47b206
   name: nginx
   newName: local-registry.registry.svc.cluster.local:5000/nginx-custom
